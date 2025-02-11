@@ -8,7 +8,8 @@ const Header = ({setContent}) =>{
             <h1>Dziennik treningowy</h1>
             <div className="buttons-panel">
                 <button onClick={() =>setContent('create')}>Utwórz tabelę</button>
-                <button onClick={() =>setContent('open')}>Otwórz tabelę</button>
+                <button onClick={() =>setContent('fill')}>Utwórz wpis</button>
+                <button onClick={() =>setContent('see')}>Zobacz tabelę</button>
             </div>
         </header>
         </>
