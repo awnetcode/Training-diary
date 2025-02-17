@@ -1,0 +1,20 @@
+.counter-list{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    align-self: flex-end;
+    margin-bottom: 2rem;
+}
+
+.counter-item{
+    width: 10px;
+    height: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.counter-item-active{
+    background: white;
+}

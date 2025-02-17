@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 import Header from './components/Header';
 import WritingArea from './components/WritingArea';
+import Slider from './components/slider/Slider';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <>  
     <Header setContent={setContent}/>
     <WritingArea content={content}/>
+    <Slider/>
     </>
   )
 

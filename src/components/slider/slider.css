@@ -1,0 +1,7 @@
+#slider-container{
+    height: 600px;
+    background-color: silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
