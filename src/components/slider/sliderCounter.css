@@ -4,8 +4,8 @@
     align-items: center;
     justify-content: center;
     gap: 4px;
-    align-self: flex-end;
-    margin-bottom: 2rem;
+    bottom: 2rem;
+    position: relative;
 }
 
 .counter-item{
@@ -13,6 +13,7 @@
     height: 10px;
     border: 2px solid white;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .counter-item-active{
