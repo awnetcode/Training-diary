@@ -3,3 +3,21 @@
     align-items: center;
     justify-content: center;
 }
+
+.table-head td{
+    text-align: center;
+}
+
+.fill-cell{
+    padding: 2px;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.fill-cell:focus{
+    border: none;
+    box-shadow: 0 0 5px 5px white;
+}
+

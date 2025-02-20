@@ -11,7 +11,7 @@ const SliderCounter = ({itemActive, setItemActive}) =>{
                 <li 
                     key={index} 
                     className={`counter-item ${index === itemActive ? "counter-item-active" : ""}`}
-                    onClick={() => setItemActive(index)} // Możesz dodać kliknięcie do zmiany aktywnego slajdu
+                    onClick={() => setItemActive(index)} 
                 ></li>
             ))}
         </ul>

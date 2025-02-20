@@ -6,6 +6,17 @@
     gap: 1rem;
 }
 
-label input{
+label select{
+    padding: .5rem;
     margin-left: .5rem;
+    background: transparent;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+option{
+    cursor: pointer;
+    text-align: center;
+    color: red;
 }

@@ -1,11 +1,21 @@
 import '../styles/createTable.css';
 
-import { useState } from 'react';
 
-const CreateTable = () =>{
+// eslint-disable-next-line react/prop-types
+const CreateTable = ({columnsNumber, setColumnsNumber, paramNames, setParamNames}) =>{
 
-    const [columnsNumber, setColumnsNumber] = useState(0);
+    
     const paraNames = ['Pierwszy', 'Drugi', 'Trzeci', 'Czwarty', 'Piąty'];
+
+    console.log(paramNames);
+
+    const createTableHeader = (e, index) => {
+        setParamNames(prev => {
+            const newNames = [...prev];
+            newNames[index] = e.target.value;
+            return newNames;
+        });
+    };
 
     return(
         <>
@@ -15,6 +25,7 @@ const CreateTable = () =>{
                 id="" 
                 className="columns-number"
                 onChange={(e) => setColumnsNumber(Number(e.target.value))} 
+                name='first'
                 >
                     <option value="0">0</option>
                     <option value="1">1</option>
@@ -25,7 +36,14 @@ const CreateTable = () =>{
                 </select>
             </label>
             {Array.from({ length: columnsNumber }).map((_, i) => (
-                        <div key={i} className="column">{`${paraNames[i]} parametr:`}</div>
+                        <div key={i} className="column"> 
+                            <span>{`${paraNames[i]} parametr:`}</span>
+                            <input 
+                            type="text" 
+                            className='column-name' 
+                            onInput={(e) => createTableHeader(e, i)}
+                            />
+                        </div>
                     ))}
         </div>
         </>

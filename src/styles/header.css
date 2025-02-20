@@ -18,4 +18,5 @@
 .buttons-panel button{
     padding: .5rem;
     border: none;
+    cursor: pointer;
 }

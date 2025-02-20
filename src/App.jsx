@@ -11,9 +11,9 @@ function App() {
   const [content, setContent] = useState('');
   return(
     <>  
+    <Slider/>
     <Header setContent={setContent}/>
     <WritingArea content={content}/>
-    <Slider/>
     </>
   )
 
